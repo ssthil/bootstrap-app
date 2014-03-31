@@ -1,0 +1,33 @@
+/************** Customized bootstrap *******/
+.navbar-brand{font-size:12px;}
+.navbar-inverse {
+	background-color: #8e72bc;
+	border-color: #985ABB;
+}
+.jumbotron{margin-bottom: 0px; background: #fff;}
+.navbar-inverse .navbar-brand {
+color: #f4f4f4;
+}
+.navbar-inverse .navbar-nav>li>a {
+color: #E6C7EE;
+font-size: 12px;
+}
+.navbar{min-height:30px;}
+.navbar-brand {
+	float: left;
+	padding: 5px 5px;
+	line-height: 16px;
+}
+.navbar-nav>li>a {
+padding-top: 5px;
+padding-bottom: 5px;
+}
+/************** Additional class *******/
+.main-nav{
+	background: #f8f8f6;
+	border-radius:0;
+	-webkit-border-radius:0;
+	-moz-border-radius:0;
+	-ms-border-radius:0;
+	-o-border-radius:0;
+	}
