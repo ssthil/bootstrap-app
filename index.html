@@ -5,11 +5,43 @@
 	<meta http-equiv="X-UA-Compatible" content="IE=edge">
 	<meta name="viewport" content="width=device-width, initial-scale=1">
 	<title>AVA - Agri Food & Veterinary</title>
+	<link rel="stylesheet" href="css/normalize.css">
 	<link rel="stylesheet" href="css/bootstrap.min.css">
 	<link rel="stylesheet" href="css/main.css">
 </head>
 <body>
-	<div class="navbar navbar-inverse navbar-fixed-top" role="navigation">
+	<div class="top-header">
+		<div class="container">
+			<div class="pull-left">
+				<span class="navbar-brand">Today 31 March, 2014</span>
+			</div>
+			<div class="pull-right">
+				<ul>
+					<li><a href="#">Contact Info</a></li>
+					<li><a href="#">Feedback</a></li>
+					<li><a href="#">Sitemap</a></li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<div class="header">
+		<div class="container">
+			<div class="row">
+				<div class="col-xs-3 col-md-2 responsive-logo"><img src="img/logo-ava.jpg" alt="AVA"/></div>
+				<div class="col-xs-9 col-md-6 responsive-logo ava-name"><img src="img/ava-name.jpg" alt="Agri Food & Veterinary"/></div>
+				<div class="col-xs-9 col-md-4 responsive-logo top-right">
+					<img class=" pull-right" src="img/singapore-govt-logo.jpg" alt="Singapore government"/>
+					<form class="navbar-form navbar-left top-search" role="search">
+					  <div class="form-group">
+						<input type="text" name="search" id="search" class="form-control" placeholder="Search">
+					  </div>
+					  <button type="submit" class="btn btn-inverse btn-search-align"><i class="glyphicon glyphicon-search"></i></button>
+					</form>
+				</div>
+			</div>
+		</div>
+	</div>
+	<div class="navbar navbar-default main-nav" role="navigation">
 		<div class="container">
 			<div class="navbar-header">
 				<button type="button" class="navbar-toggle" data-toggle="collapse" data-target=".navbar-collapse">
@@ -18,31 +50,14 @@
 					<span class="icon-bar"></span>
 					<span class="icon-bar"></span>
 				</button>
-				<span class="navbar-brand">Today 31 March, 2014</span>
 			</div>
-			<div class="collapse navbar-collapse navbar-right">
-				<ul class="nav navbar-nav">
-					<li><a href="#">Contact Info</a></li>
-					<li><a href="#">Feedback</a></li>
-					<li><a href="#">Sitemap</a></li>
-				</ul>
-			</div>
-		</div>
-	</div>
-	<div class="jumbotron">
-		<div class="container">
-			<h4>Wide Angle</h4>
-		</div>
-	</div>
-	<div class="navbar main-nav">
-		<div class="container">
-			<div class="navbar-collapse">
+			<div class="navbar-collapse collapse">
 				<ul class="nav navbar-nav">
 					<li><a href="">Home</a></li>
 					<li><a href="">About Us</a></li>
 					<li><a href="">FAQ</a></li>
 					<li><a href="">Services</a></li>
-					<li><a href="">Anouncement</a></li>
+					<li><a href="">Announcement</a></li>
 					<li><a href="">Useful Links</a></li>
 				</ul>
 			</div>
@@ -54,40 +69,40 @@
 			<div class="sidebar-module">
 				<h4>Query + Feedback</h4>
 				<ul>
-					<li><a href="">Query</a></li>
-					<li><a href="">Feedback</a></li>
+					<li class="active"><a href="">Query</a></li>
+					<li>Feedback</li>
 				</ul>
 			</div>
 			<div class="sidebar-module">
 				<h4>Bills</h4>
 				<ul>
-					<li><a href="">View Outstanding Bills</a></li>
-					<li><a href="">Make Payment</a></li>
+					<li><a href="bill.html">View Outstanding Bills</a></li>
+					<li>Make Payment</li>
 				</ul>
 			</div>
 			<div class="sidebar-module">
 				<h4>e-Services</h4>
 				<ul>
-					<li><a href="">Transaction Status</a></li>
-					<li><a href="">License, Permit + Certificate</a></li>
-					<li><a href="">Inspection</a></li>
-					<li><a href="">Lab Test</a></li>
-					<li><a href="">Empforcement</a></li>
-					<li><a href="">Quarantine</a></li>
+					<li>Transaction Status</li>
+					<li>License, Permit + Certificate</li>
+					<li>Inspection</li>
+					<li>Lab Test</li>
+					<li>Empforcement</li>
+					<li>Quarantine</li>
 				</ul>
 			</div>
 			<div class="sidebar-module">
 				<h4>Profile</h4>
 				<ul>
-					<li><a href="">Update Profile</a></li>
-					<li><a href="">Manage Subscription</a></li>
-					<li><a href="">My Notifications</a></li>
-					<li><a href="">Contact Details</a></li>
+					<li>Update Profile</li>
+					<li>Manage Subscription</li>
+					<li>My Notifications</li>
+					<li>Contact Details</li>
 				</ul>
 			</div>
 		</div>
-		<div class="col-sm-8">
-			<h2>Enquiry Form</h2>
+		<div class="col-sm-9">
+			<h2 class="page-title">Enquiry Form</h2>
 			<div class="bs-example">
 				<form class="form-horizontal" role="form">
 	
@@ -95,15 +110,19 @@
 						<label for="selectCategory" class="control-label col-sm-2">Category <span>*</span></label>
 						<div class="col-sm-10">
 						<select name="selectCategory" id="selectCategory" class="form-control">
-							<option value="">Select</option>			
+							<option value="0">Select</option>
+							<option value="1">Option1</option>
+							<option value="2">Option2</option>				
 						</select>	
 						</div>
-					</div>	
+					</div>				
 					<div class="form-group">
 						<label for="category" class="control-label col-sm-2">Sub Category <span>*</span></label>
 						<div class="col-sm-10">
 						<select name="category" id="category" class="form-control">
-							<option value="">Select</option>			
+							<option value="0">Select</option>
+							<option value="1">Option1</option>
+							<option value="2">Option2</option>	
 						</select>	
 						</div>
 					</div>	
@@ -113,12 +132,93 @@
 						<input type="text" class="form-control" id="inputSubject" placeholder="Subject">
 						</div>
 					</div>	
-      
+					<div class="form-group">
+						<label for="description" class="control-label col-sm-2">Description<span>*</span></label>
+						<div class="col-sm-10">
+							<textarea class="form-control" id="description" name="description" rows="3"></textarea>
+						</div>
+					</div>
+					<div class="form-group">
+						<label for="inputReferenceNo" class="control-label col-sm-2">Reference No.</label>
+						<div class="col-sm-10">
+							<input type="text" class="form-control" id="inputReferenceNo" name="inputReferenceNo">
+						</div>
+					</div>
+					<div class="form-group">
+						<label for="attachment" class="col-sm-2 control-label">Attachment</label>
+						<div class="col-sm-10">
+							<div class="input-group">
+							<input type="text" class="form-control" readonly>
+								<span class="input-group-btn">
+									<span class="btn btn-primary btn-file">
+										Upload<input type="file" multiple>
+									</span>
+								</span>
+								
+							</div>
+						</div>
+					</div>
+					<div class="form-group">
+						<label for="inputAddress" class="control-label col-sm-2">Address</label>
+						<div class="col-sm-10">
+							<input type="checkbox" id="inputAddress" name="inputAddress">
+						</div>
+					</div>
+					<div class="form-group">
+						<label for="inputReferenceNo" class="control-label col-sm-2">Blk</label>
+						<div class="col-sm-4">
+							<input type="text" class="form-control" id="inputReferenceNo" name="inputReferenceNo">
+						</div>
+				
+						<label for="inputReferenceNo" class="control-label col-sm-2">Unit</label>
+						<div class="col-sm-4">
+							<input type="text" class="form-control" id="inputReferenceNo" name="inputReferenceNo">
+						</div>
+					</div>
+					<div class="form-group">
+						<label for="inputStreet" class="control-label col-sm-2">Street</label>
+						<div class="col-sm-10">
+							<input type="text" class="form-control" id="inputStreet" name="inputStreet">
+						</div>
+					</div>
+					<div class="form-group">
+						<label for="inputPostalCode" class="control-label col-sm-2">Postal Code</label>
+						<div class="col-sm-10">
+							<input type="text" class="form-control" id="inputPostalCode" name="inputPostalCode">
+						</div>
+					</div>
+					<div class="form-group">
+						<div class="col-sm-10 col-sm-offset-2">
+							<div class="btns"><input type="submit" class="btn btn-primary " value="Save">
+							<input type="submit" class="btn btn-success " value="Submit">
+							<input type="submit" class="btn btn-default " value="Cancel"></div>
+						</div>
+					</div>
 				</form>
 			</div>
 		</div>
 	</div>
+
 	</div>
+	<div class="footer footer-2">
+		<div class="container">
+			<p class="pull-right">
+				<span>© 2014 Government of Singapore</span>
+				<span>Best viewed using IE 7.0+</span>
+			</p>
+			<div class="pull-left">
+			<h6>Last updated on 14 March 2014</h6>
+				<ul>
+					<li>Privacy Statement</li>
+					<li>Terms of Use</li>
+					<li>Rate our Site</li>
+				</ul>
+			</div>
+		</div>
+	</div>
+	<script src="js/jquery.min.js"></script>
+	<script src="js/modernizr-latest.js"></script>
 	<script src="js/bootstrap.min.js"></script>
+	<script src="js/script.js"></script>
 </body>
 </html>
